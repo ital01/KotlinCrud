@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinCrud</string>
+    <string name="hint_name">Nome</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Telefone</string>
+    <string name="button_create">Criar</string>
+</resources>
