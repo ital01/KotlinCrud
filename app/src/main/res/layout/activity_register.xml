@@ -9,28 +9,6 @@
     tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/textView26"
-        android:layout_width="350dp"
-        android:layout_height="10dp"
-        app2:layout_constraintBottom_toBottomOf="parent"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.495"
-        app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.703" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="350dp"
-        android:layout_height="10dp"
-        app2:layout_constraintBottom_toBottomOf="parent"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.495"
-        app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.798" />
-
-    <TextView
         android:id="@+id/phone_label"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -91,17 +69,6 @@
         app2:layout_constraintTop_toTopOf="parent"
         app2:layout_constraintVertical_bias="0.332" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="350dp"
-        android:layout_height="10dp"
-        app2:layout_constraintBottom_toBottomOf="parent"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.495"
-        app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.41000003" />
-
     <EditText
         android:id="@+id/register_personal_experience_input"
         android:layout_width="350dp"
@@ -145,28 +112,6 @@
         app2:layout_constraintStart_toStartOf="parent"
         app2:layout_constraintTop_toTopOf="parent"
         app2:layout_constraintVertical_bias="0.726" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="350dp"
-        android:layout_height="10dp"
-        app2:layout_constraintBottom_toBottomOf="parent"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.495"
-        app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.509" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="350dp"
-        android:layout_height="10dp"
-        app2:layout_constraintBottom_toBottomOf="parent"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.495"
-        app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.607" />
 
     <EditText
         android:id="@+id/register_country_input"
@@ -272,6 +217,7 @@
         android:layout_width="110dp"
         android:layout_height="65dp"
         android:contentDescription="@string/logo_image_description"
+        android:visibility="visible"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
         app2:layout_constraintHorizontal_bias="0.946"
@@ -289,6 +235,7 @@
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:visibility="visible"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
         app2:layout_constraintHorizontal_bias="0.947"
@@ -306,6 +253,7 @@
         android:textColor="#2196F3"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:visibility="visible"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
         app2:layout_constraintHorizontal_bias="0.491"
@@ -321,11 +269,13 @@
         android:text="@string/register_activity_subtitle_hint"
         android:textAlignment="center"
         android:textSize="16sp"
+        android:visibility="visible"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
         app2:layout_constraintHorizontal_bias="0.483"
         app2:layout_constraintStart_toStartOf="parent"
         app2:layout_constraintTop_toTopOf="parent"
         app2:layout_constraintVertical_bias="0.237" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

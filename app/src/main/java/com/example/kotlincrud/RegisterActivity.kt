@@ -1,8 +1,12 @@
 package com.example.kotlincrud
 
+import android.graphics.Rect
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -14,6 +18,11 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
+        val rootView = window.decorView.findViewById<View>(android.R.id.content)
+        val appName: TextView = findViewById(R.id.register_app_name)
+        val appLogo: ImageView = findViewById(R.id.register_app_logo)
+        val registerTitle: TextView = findViewById(R.id.register_title)
+        val registerSubTitle: TextView = findViewById(R.id.register_subtitle)
         val editTextName: EditText = findViewById(R.id.register_name_input)
         val editTextEmail: EditText = findViewById(R.id.register_email_input)
         val editTextPhone: EditText = findViewById(R.id.register_phone_input)
@@ -22,6 +31,26 @@ class RegisterActivity : AppCompatActivity() {
         val editTextPersonalExperience: EditText = findViewById(R.id.register_personal_experience_input)
 
         val buttonCreate: Button = findViewById(R.id.buttonCreate)
+
+        rootView.viewTreeObserver.addOnGlobalLayoutListener {
+            val rect = Rect()
+            rootView.getWindowVisibleDisplayFrame(rect)
+
+            val screenHeight = rootView.rootView.height
+            val keypadHeight = screenHeight - rect.bottom
+
+            if (keypadHeight > screenHeight * 0.15) {
+                appName.visibility = View.GONE
+                appLogo.visibility = View.GONE
+                registerTitle.visibility = View.GONE
+                registerSubTitle.visibility = View.GONE
+            } else {
+                appName.visibility = View.VISIBLE
+                appLogo.visibility = View.VISIBLE
+                registerTitle.visibility = View.VISIBLE
+                registerSubTitle.visibility = View.VISIBLE
+            }
+        }
 
         buttonCreate.setOnClickListener {
             val name = editTextName.text.toString().trim()
