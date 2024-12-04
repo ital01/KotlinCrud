@@ -18,7 +18,7 @@
         Senha
     </string>
     <string name="button_create">
-        Criar
+        Salvar
     </string>
     <string name="button_login">
         Entrar
@@ -47,4 +47,17 @@
     <string name="login_activity_subTitle">
         Após efetuar o Login, seus dados serão automaticamente salvos.
     </string>
+    <string name="phone_mask_hint">+xx (xx)xxxxx-xxxx</string>
+    <string name="name_mask_hint">Ex. João da Silva</string>
+    <string name="complete_name_hint">Nome Completo</string>
+    <string name="profession_mask_hint">Ex. Pedreiro, Cozinheiro etc.</string>
+    <string name="personal_experience_hint">Experiência Pessoal</string>
+    <string name="country_mask_hint">Ex. Síria, Iraque etc.</string>
+    <string name="country_hint">País de Origem</string>
+    <string name="languages_mask_hint">Ex. Inglês, Mandarim etc.</string>
+    <string name="languages_label_hint">Idiomas Falados</string>
+    <string name="email_mask_hint">example@gmail.com</string>
+    <string name="register_activity_title_hint">COMPARTILHE SUAS INFORMAÇÕES</string>
+    <string name="register_activity_subtitle_hint">Preencha os campos abaixo para que possamos te conhecer melhor</string>
+    <string name="logo_image_description">Logo image</string>
 </resources>

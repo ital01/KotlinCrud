@@ -8,10 +8,270 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.703" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.798" />
+
+    <TextView
+        android:id="@+id/phone_label"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/hint_phone"
+        android:textStyle="bold"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.823" />
+
+    <EditText
+        android:id="@+id/register_phone_input"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/phone_mask_hint"
+        android:inputType="phone"
+        android:textSize="14sp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.875" />
+
+    <EditText
+        android:id="@+id/register_name_input"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:backgroundTint="#979797"
+        android:ems="10"
+        android:hint="@string/name_mask_hint"
+        android:inputType="text"
+        android:textSize="14sp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/complete_name_hint"
+        android:textStyle="bold"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.332" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.41000003" />
+
+    <EditText
+        android:id="@+id/register_personal_experience_input"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/profession_mask_hint"
+        android:inputType="text"
+        android:textSize="14sp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.675" />
+
+    <TextView
+        android:id="@+id/personal_experience_label"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/personal_experience_hint"
+        android:textStyle="bold"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.629" />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/hint_email"
+        android:textStyle="bold"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.726" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.607" />
+
+    <EditText
+        android:id="@+id/register_country_input"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/country_mask_hint"
+        android:inputType="text"
+        android:textSize="14sp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/country_label"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/country_hint"
+        android:textStyle="bold"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.432" />
+
+    <EditText
+        android:id="@+id/register_language_input"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/languages_mask_hint"
+        android:inputType="text"
+        android:textSize="14sp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.575" />
+
+    <TextView
+        android:id="@+id/language_label"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/languages_label_hint"
+        android:textStyle="bold"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.529" />
+
+    <EditText
+        android:id="@+id/register_email_input"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email_mask_hint"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.775" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="monospace"
+        android:text="@string/button_create"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.498"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.976"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintMarginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutName"
+        app:layout_constraintVertical_bias="0.337" />
+
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/register_app_logo"
         android:layout_width="110dp"
         android:layout_height="65dp"
+        android:contentDescription="@string/logo_image_description"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
         app2:layout_constraintHorizontal_bias="0.946"
@@ -21,7 +281,7 @@
         app2:srcCompat="@drawable/handshake" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/register_app_name"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
@@ -36,65 +296,36 @@
         app2:layout_constraintTop_toTopOf="parent"
         app2:layout_constraintVertical_bias="0.022" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/nameTextInput"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:hint="@string/hint_name"
-        android:inputType="textPersonName"
-        app2:layout_constraintBottom_toBottomOf="parent"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.495"
-        app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.287" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/phoneTextInput"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:hint="@string/hint_phone"
-        android:inputType="phone"
-        app2:layout_constraintBottom_toBottomOf="parent"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.495"
-        app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.534" />
-
-    <Button
-        android:id="@+id/buttonCreate"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#2196F3"
         android:fontFamily="monospace"
-        android:text="@string/button_create"
-        android:textSize="20sp"
+        android:text="@string/register_activity_title_hint"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.501"
+        app2:layout_constraintHorizontal_bias="0.491"
         app2:layout_constraintStart_toStartOf="parent"
         app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.663"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintMarginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayoutName"
-        app:layout_constraintVertical_bias="0.337" />
+        app2:layout_constraintVertical_bias="0.152" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/emailTextInput"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:hint="@string/hint_email"
-        android:inputType="textEmailAddress"
+    <TextView
+        android:id="@+id/register_subtitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/register_activity_subtitle_hint"
+        android:textAlignment="center"
+        android:textSize="16sp"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintHorizontal_bias="0.483"
         app2:layout_constraintStart_toStartOf="parent"
         app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.408" />
+        app2:layout_constraintVertical_bias="0.237" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
