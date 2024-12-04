@@ -8,9 +8,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity() {
-    private lateinit var editTextUser: EditText
-    private lateinit var editTextPassword: EditText
-    private lateinit var buttonLogin: Button
 
     private val dbService = DatabaseService()
 
@@ -18,9 +15,9 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        editTextUser = findViewById(R.id.userTextInput)
-        editTextPassword = findViewById(R.id.passwordTextInput)
-        buttonLogin = findViewById(R.id.buttonLogin)
+        val editTextUser: EditText = findViewById(R.id.userTextInput)
+        val editTextPassword: EditText = findViewById(R.id.passwordTextInput)
+        val buttonLogin: Button = findViewById(R.id.buttonLogin)
 
         buttonLogin.setOnClickListener {
             val user = editTextUser.text.toString().trim()
@@ -31,6 +28,8 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 dbService.login(user, password, fun(success: Boolean) {
                     onCreateCallback(success)
+                    editTextUser.text.clear()
+                    editTextPassword.text.clear()
                 })
             }
         }
@@ -39,16 +38,10 @@ class LoginActivity : AppCompatActivity() {
     private fun onCreateCallback(success: Boolean) {
         if (success) {
             Toast.makeText(this, "Bem vindo de volta!", Toast.LENGTH_SHORT).show()
-            clearInputs()
             val registerActivity = Intent(this, RegisterActivity::class.java)
             startActivity(registerActivity)
         } else {
             Toast.makeText(this, "Erro ao entrar, tente novamente", Toast.LENGTH_SHORT).show()
         }
-    }
-
-    private fun clearInputs() {
-        editTextUser.text.clear()
-        editTextPassword.text.clear()
     }
 }

@@ -41,4 +41,10 @@
     <string name="main_activity_text2">
         Cadastre seu dados para que empresas interessadas entrem em contato para oferecer oportunidades.
     </string>
+    <string name="login_activity_title">
+        LOGIN
+    </string>
+    <string name="login_activity_subTitle">
+        Após efetuar o Login, seus dados serão automaticamente salvos.
+    </string>
 </resources>
