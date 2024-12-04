@@ -1,40 +1,35 @@
 package com.example.kotlincrud
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var editTextName: EditText
-    private lateinit var editTextEmail: EditText
-    private lateinit var editTextPhone: EditText
-    private lateinit var buttonCreate: Button
+    private lateinit var editTextUser: EditText
+    private lateinit var editTextPassword: EditText
+    private lateinit var buttonLogin: Button
 
-    private val dbHelper = DatabaseHelper()
+    private val dbService = DatabaseService()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        editTextName = findViewById(R.id.nameTextInput)
-        editTextEmail = findViewById(R.id.emailTextInput)
-        editTextPhone = findViewById(R.id.phoneTextInput)
-        buttonCreate = findViewById(R.id.buttonCreate)
+        editTextUser = findViewById(R.id.userTextInput)
+        editTextPassword = findViewById(R.id.passwordTextInput)
+        buttonLogin = findViewById(R.id.buttonLogin)
 
-        buttonCreate.setOnClickListener {
-            val name = editTextName.text.toString().trim()
-            val email = editTextEmail.text.toString().trim()
-            val phone = editTextPhone.text.toString().trim()
-
-            if (name.isEmpty() || email.isEmpty() || phone.isEmpty()) {
+        buttonLogin.setOnClickListener {
+            val user = editTextUser.text.toString().trim()
+            val password = editTextPassword.text.toString().trim()
+            val hasEmptyInput = user.isEmpty() || password.isEmpty()
+            if (hasEmptyInput) {
                 Toast.makeText(this, "Preencha todos os campos!", Toast.LENGTH_SHORT).show()
             } else {
-                val user = User(name, email, phone)
-                dbHelper.createUser(user, fun(success: Boolean) {
+                dbService.login(user, password, fun(success: Boolean) {
                     onCreateCallback(success)
                 })
             }
@@ -43,16 +38,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun onCreateCallback(success: Boolean) {
         if (success) {
-            Toast.makeText(this, "Usuário criado com sucesso!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Bem vindo de volta!", Toast.LENGTH_SHORT).show()
             clearInputs()
+            val registerActivity = Intent(this, RegisterActivity::class.java)
+            startActivity(registerActivity)
         } else {
-            Toast.makeText(this, "Erro ao criar usuário!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Erro ao entrar, tente novamente", Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun clearInputs() {
-        editTextName.text.clear()
-        editTextEmail.text.clear()
-        editTextPhone.text.clear()
+        editTextUser.text.clear()
+        editTextPassword.text.clear()
     }
 }

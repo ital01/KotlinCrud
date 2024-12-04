@@ -2,6 +2,9 @@
     <string name="app_name">KotlinCrud</string>
     <string name="hint_name">Nome</string>
     <string name="hint_email">Email</string>
+    <string name="hint_user">Usuario</string>
     <string name="hint_phone">Telefone</string>
+    <string name="hint_password">Senha</string>
     <string name="button_create">Criar</string>
+    <string name="button_login">Entrar</string>
 </resources>

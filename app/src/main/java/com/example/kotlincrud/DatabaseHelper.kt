@@ -1,25 +1,32 @@
 package com.example.kotlincrud
+
 import android.util.Log
 
 class DatabaseHelper {
 
-    fun createUser(user: User, onComplete: (Boolean) -> Unit) {
+    fun createUser(user: User) {
         Log.d("UserCreation", "Created user: ${user.name}")
-        onComplete(true)
     }
 
-    fun deleteUser(user: User, onComplete: (Boolean) -> Unit) {
+    fun deleteUser(user: User) {
         Log.d("UserDeletion", "Deleted user: ${user.name}")
-        onComplete(true)
     }
 
-    fun editUser(user: User, onComplete: (Boolean) -> Unit) {
+    fun editUser(user: User) {
         Log.d("UserEdition", "Edited user: ${user.name}")
-        onComplete(true)
     }
 
     fun listUsers() {
-
+        // Implementar listagem de usuários
     }
 
+    fun login(user: String, password: String): Boolean {
+        return try {
+            Log.d("Login", "Login with user $user")
+            true
+        } catch (error: Error) {
+            Log.e("LoginError", "Error logging in: ${error.message}")
+            false
+        }
+    }
 }

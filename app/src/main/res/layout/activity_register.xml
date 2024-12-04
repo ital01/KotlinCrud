@@ -9,10 +9,10 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttonCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_login"
+        android:text="@string/button_create"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
         app2:layout_constraintStart_toStartOf="parent"
@@ -26,10 +26,23 @@
         app:layout_constraintVertical_bias="0.337" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/userTextInput"
+        android:id="@+id/nameTextInput"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:hint="@string/hint_user"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.179" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailTextInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/hint_email"
         android:inputType="textEmailAddress"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
@@ -39,11 +52,11 @@
         app2:layout_constraintVertical_bias="0.281" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/passwordTextInput"
+        android:id="@+id/phoneTextInput"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:hint="@string/hint_password"
-        android:inputType="textPassword"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
         app2:layout_constraintBottom_toBottomOf="parent"
         app2:layout_constraintEnd_toEndOf="parent"
         app2:layout_constraintHorizontal_bias="0.495"
