@@ -7,10 +7,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class RegisterActivity : AppCompatActivity() {
-    private lateinit var editTextName: EditText
-    private lateinit var editTextEmail: EditText
-    private lateinit var editTextPhone: EditText
-    private lateinit var buttonCreate: Button
 
     private val dbService = DatabaseService()
 
@@ -18,10 +14,10 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        editTextName = findViewById(R.id.nameTextInput)
-        editTextEmail = findViewById(R.id.emailTextInput)
-        editTextPhone = findViewById(R.id.phoneTextInput)
-        buttonCreate = findViewById(R.id.buttonCreate)
+        val editTextName: EditText = findViewById(R.id.nameTextInput)
+        val editTextEmail: EditText = findViewById(R.id.emailTextInput)
+        val editTextPhone: EditText = findViewById(R.id.phoneTextInput)
+        val buttonCreate: Button = findViewById(R.id.buttonCreate)
 
         buttonCreate.setOnClickListener {
             val name = editTextName.text.toString().trim()
@@ -34,6 +30,9 @@ class RegisterActivity : AppCompatActivity() {
                 val user = User(name, email, phone)
                 dbService.createUser(user, fun(success: Boolean) {
                     onCreateCallback(success)
+                    editTextName.text.clear()
+                    editTextEmail.text.clear()
+                    editTextPhone.text.clear()
                 })
             }
         }
@@ -42,15 +41,7 @@ class RegisterActivity : AppCompatActivity() {
     private fun onCreateCallback(success: Boolean) {
         if (success) {
             Toast.makeText(this, "Usuário criado com sucesso!", Toast.LENGTH_SHORT).show()
-            clearInputs()
         } else {
             Toast.makeText(this, "Erro ao criar usuário!", Toast.LENGTH_SHORT).show()
         }
-    }
-
-    private fun clearInputs() {
-        editTextName.text.clear()
-        editTextEmail.text.clear()
-        editTextPhone.text.clear()
-    }
-}
+    } }

@@ -1,11 +1,44 @@
 <resources>
-    <string name="app_name">KotlinCrud</string>
-    <string name="hint_name">Nome</string>
-    <string name="hint_email">Email</string>
-    <string name="hint_user">Usuario</string>
-    <string name="hint_phone">Telefone</string>
-    <string name="hint_password">Senha</string>
-    <string name="button_create">Criar</string>
-    <string name="button_login">Entrar</string>
-    <string name="MainActivityTitle">Olá, Bem Vindo ao</string>
+    <string name="app_name">
+        RefugeeJobs
+    </string>
+    <string name="hint_name">
+        Nome
+    </string>
+    <string name="hint_email">
+        Email
+    </string>
+    <string name="hint_user">
+        Usuario
+    </string>
+    <string name="hint_phone">
+        Telefone
+    </string>
+    <string name="hint_password">
+        Senha
+    </string>
+    <string name="button_create">
+        Criar
+    </string>
+    <string name="button_login">
+        Entrar
+    </string>
+    <string name="button_start">
+        COMEÇAR
+    </string>
+    <string name="main_activity_title">
+        Olá, Bem Vindo ao
+    </string>
+    <string name="help_text">
+        Se precisar de ajuda, procure centros comunitários ou ONGs parceiras para orientação.
+    </string>
+    <string name="impact_text">
+        Juntos, vamos construir um novo recomeço!
+    </string>
+    <string name="main_activity_text1">
+        O aplicativo feito para ajudar você a recomeçar sua jornada.
+    </string>
+    <string name="main_activity_text2">
+        Cadastre seu dados para que empresas interessadas entrem em contato para oferecer oportunidades.
+    </string>
 </resources>
