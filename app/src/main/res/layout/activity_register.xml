@@ -36,26 +36,6 @@
         app2:layout_constraintTop_toTopOf="parent"
         app2:layout_constraintVertical_bias="0.022" />
 
-    <Button
-        android:id="@+id/buttonCreate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#2196F3"
-        android:fontFamily="monospace"
-        android:text="@string/button_create"
-        android:textSize="20sp"
-        app2:layout_constraintBottom_toBottomOf="parent"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintMarginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayoutName"
-        app:layout_constraintVertical_bias="0.337" />
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/nameTextInput"
         android:layout_width="300dp"
@@ -67,20 +47,7 @@
         app2:layout_constraintHorizontal_bias="0.495"
         app2:layout_constraintStart_toStartOf="parent"
         app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.179" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/emailTextInput"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:hint="@string/hint_email"
-        android:inputType="textEmailAddress"
-        app2:layout_constraintBottom_toBottomOf="parent"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.495"
-        app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.281" />
+        app2:layout_constraintVertical_bias="0.287" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/phoneTextInput"
@@ -93,6 +60,41 @@
         app2:layout_constraintHorizontal_bias="0.495"
         app2:layout_constraintStart_toStartOf="parent"
         app2:layout_constraintTop_toTopOf="parent"
-        app2:layout_constraintVertical_bias="0.383" />
+        app2:layout_constraintVertical_bias="0.534" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="monospace"
+        android:text="@string/button_create"
+        android:textSize="20sp"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.501"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.663"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintMarginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutName"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailTextInput"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.495"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_bias="0.408" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
